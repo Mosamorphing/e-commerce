@@ -11,7 +11,7 @@ ShopOrion is an eCommerce platform built using React. The current stage includes
 - [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
 - [Pages Included](#pages-included)
-- [Feedback](#feedback(?))
+- [Feedback](#feedback)
 
 ## Getting Started
 
@@ -110,7 +110,7 @@ Here’s the current project structure:
 - **PlaceOrder.jsx**: Checkout page for placing orders.
 - **Product.jsx**: Detailed view of individual product information.
 
-## Feedback(?)
+## Feedback
 
 Sure! Feel free to submit pull requests to improve the project. Contributions are welcome!
 
