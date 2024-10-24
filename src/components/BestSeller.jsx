@@ -18,7 +18,7 @@ export const BestSeller = () => {
         <div className='text-center text-3xl py-8'>
             <Title text1={'BEST'} text2={'SELLERS'} />
             <p className='w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600'>
-            But the most basic pieces of female clothing were made-to-measure by dressmakers and seamstresses dealing directly with the client. Most often, clothing was patterned, sewn and tailored in the household. When storefronts appeared selling ready-to-wear clothing, this need was removed from the domestic workload.
+            But the most basic pieces of female clothing were made-to-measure by dressmakers and seamstresses dealing directly with the client. Most often, clothing was patterned, sewn and tailored in the household. 
             </p>
         </div>
 
