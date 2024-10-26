@@ -18,7 +18,7 @@ ShopOrion is an e-commerce application designed to deliver a smooth shopping exp
 ## Current Status
 
 - The **frontend** is fully functional, allowing users to browse products, view details, manage their cart, and access account-related features.
-- The **backend** setup is in progress with MongoDB and route configurations established. Currently, work is focused on the `productRoute` to finalize product-related API functionality.
+- The **backend** setup is in progress with MongoDB and route configurations are well established. Currently, work is focused on the `productRoute` to finalize product-related API functionality.
 
 ## Current Issue
 
