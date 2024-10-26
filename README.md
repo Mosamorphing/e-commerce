@@ -1,116 +1,38 @@
-## Project Overview
+# ShopOrion
 
-ShopOrion is an eCommerce platform built using React. The current stage includes the basic structure and pages for the website, preparing for further development of core eCommerce features such as product browsing, cart management, and order processing.
-
-## Table of Contents
-
-- [Project Overview](#project-overview)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Project Structure](#project-structure)
-- [Technologies Used](#technologies-used)
-- [Pages Included](#pages-included)
-- [Feedback](#feedback)
-
-## Getting Started
-
-### Prerequisites
-
-Make sure you have the following installed:
-
-- **Node.js** (v16 or higher) – [Download](https://nodejs.org/)
-- **npm** or **yarn** – Comes with Node.js
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/shoporion.git
-   ```
-
-2. Navigate to the project directory:
-   ```bash
-   cd shoporion
-   ```
-
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-4. Run the development server:
-   ```bash
-   npm run dev
-   ```
-
-5. Open your browser and visit `http://localhost:3000`.
+ShopOrion is an e-commerce application designed to deliver a smooth shopping experience with a complete frontend and an actively developed backend. This project utilizes React for the frontend and Node.js with Express for the backend to provide a full-featured online store solution.
 
 ## Project Structure
 
-Here’s the current project structure:
+### Frontend
+- **Components**: Includes reusable UI components like `Navbar`, `Footer`, `ProductItem`, `RelatedProducts`, and more, ensuring an interactive and responsive user experience.
+- **Pages**: Organized pages such as `Home`, `Collection`, `Cart`, `Login`, and `About` that cover all essential e-commerce functionalities.
+- **Context**: Uses `ShopContext` for centralized state management across the application.
 
-```
-.
-├── dist/
-├── node_modules/
-├── public/
-│   └── vite.svg
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── context/
-│   └── pages/
-│       ├── About.jsx
-│       ├── Cart.jsx
-│       ├── Collection.jsx
-│       ├── Contact.jsx
-│       ├── Home.jsx
-│       ├── Login.jsx
-│       ├── Orders.jsx
-│       ├── PlaceOrder.jsx
-│       └── Product.jsx
-├── App.jsx
-├── index.css
-├── main.jsx
-├── .gitignore
-├── eslint.config.js
-├── index.html
-├── package.json
-├── package-lock.json
-├── postcss.config.js
-├── README.md
-├── tailwind.config.js
-└── vite.config.js
+### Backend
+- **Config**: Contains configuration files for connecting to the database (`mongodb.js`) and handling file uploads (`cloudinary.js`).
+- **Controllers**: Houses `userController` and `productController` to manage the logic behind user and product actions.
+- **Models**: Defines MongoDB models for `userModel` and `productModel`.
+- **Routes**: API routes, including `userRoute` and `productRoute`, to handle HTTP requests and responses.
+
+## Current Status
+
+- The **frontend** is fully functional, allowing users to browse products, view details, manage their cart, and access account-related features.
+- The **backend** setup is in progress with MongoDB and route configurations established. Currently, work is focused on the `productRoute` to finalize product-related API functionality.
+
+## Current Issue
+
+I'm currently troubleshooting an issue while testing the `productRoute`. When making requests via Thunder Client, I receive the following error:
+
+```json
+{
+    "success": false,
+    "message": "Cannot read properties of undefined (reading '1')"
+}
 ```
 
-### Key Files
+Switching to Postman yielded the same error. I'm still looking into solutions and hope to resolve this issue soon.
 
-- `App.jsx`: Main app file where the application's routing and structure are defined.
-- `index.css`: Global styles for the project.
-- `main.jsx`: Entry point for the React app.
-- `pages/`: Contains individual pages for routing (e.g., Home, About, Login, etc.).
-
-## Technologies Used
-
-- **React**: Front-end JavaScript library for building user interfaces.
-- **Vite**: Next-generation front-end tool for fast builds and hot module replacement.
-- **Tailwind CSS**: Utility-first CSS framework for styling.
-- **PostCSS**: Tool for transforming CSS with JavaScript.
-
-## Pages Included
-
-- **About.jsx**: About ShopOrion page.
-- **Cart.jsx**: Shopping cart page for reviewing and managing selected products.
-- **Collection.jsx**: Displays a collection of products available for browsing.
-- **Contact.jsx**: Contact information page for customers.
-- **Home.jsx**: Homepage with featured products and promotions.
-- **Login.jsx**: User login page for accessing accounts.
-- **Orders.jsx**: Displays past and current orders for the user.
-- **PlaceOrder.jsx**: Checkout page for placing orders.
-- **Product.jsx**: Detailed view of individual product information.
-
-## Feedback
+## Feedback(?)
 
 Sure! Feel free to submit pull requests to improve the project. Contributions are welcome!
-
